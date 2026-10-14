@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#166534">
+<title>Raviteja - Government Services Guide</title>
+<style>
+  :root { --green:#166534; --green2:#15803d; --bg:#f3f8f4; --ink:#17231b; --muted:#647067; --card:#fff; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; color:var(--ink); background:linear-gradient(180deg,#e6f5e9 0,#f6faf7 260px,var(--bg) 100%); }
+  .wrap { width:min(760px,100%); margin:0 auto; padding:24px 16px 36px; }
+  header { text-align:center; padding:26px 18px 22px; background:linear-gradient(135deg,#166534,#15803d); color:white; border-radius:24px; box-shadow:0 12px 30px #14532d22; }
+  .leaf { font-size:34px; line-height:1.2; }
+  h1 { margin:8px 0 4px; font-size:clamp(28px,6vw,40px); letter-spacing:-.7px; }
+  .subtitle { margin:0; color:#e5f5e9; font-size:15px; }
+  .controls { display:flex; gap:10px; margin:18px 0; }
+  input { min-width:0; flex:1; border:1px solid #d5e2d7; background:#fff; border-radius:13px; padding:13px 14px; font:inherit; outline:none; }
+  input:focus { border-color:var(--green2); box-shadow:0 0 0 3px #15803d18; }
+  button { border:0; cursor:pointer; font:inherit; font-weight:650; border-radius:13px; padding:12px 14px; }
+  .lang { color:var(--green); background:#fff; border:1px solid #d5e2d7; white-space:nowrap; }
+  h2 { font-size:20px; margin:24px 2px 12px; }
+  .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:11px; }
+  .service { text-align:left; display:flex; align-items:center; gap:11px; padding:15px 13px; min-height:76px; color:var(--ink); background:var(--card); border:1px solid #e2ebe4; border-radius:16px; box-shadow:0 4px 12px #183b2410; transition:transform .15s,border-color .15s; }
+  .service:hover { transform:translateY(-2px); border-color:#9ac9a4; }
+  .emoji { font-size:25px; flex:0 0 30px; text-align:center; }
+  .service-name { font-size:14px; line-height:1.35; font-weight:650; }
+  .note { margin-top:20px; padding:16px; border-radius:16px; background:#fff; border:1px solid #e2ebe4; color:#4b5b4e; font-size:13px; line-height:1.6; }
+  footer { text-align:center; color:var(--muted); font-size:13px; padding:18px 8px 0; }
+  .back { margin-top:14px; background:#e0f2e5; color:var(--green); }
+  .hidden { display:none !important; }
+  @media (max-width:440px) { .grid { grid-template-columns:1fr; } .controls { flex-wrap:wrap; } .lang { flex:0 0 auto; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="leaf" aria-hidden="true">🌿</div>
+    <h1 id="brand">Raviteja</h1>
+    <p class="subtitle" id="subtitle">Raviteja — Government Services Guide</p>
+  </header>
+
+  <div class="controls">
+    <input id="search" type="search" placeholder="Search services…" aria-label="Search services">
+    <button class="lang" id="langBtn" type="button">తెలుగు / English</button>
+  </div>
+
+  <h2 id="sectionTitle">Government Services</h2>
+  <section class="grid" id="services" aria-label="Government services">
+    <button class="service" data-en="Birth certificate జనన ధృవపత్రం" data-te="జనన ధృవపత్రం"><span class="emoji">👶</span><span class="service-name">Birth Certificate</span></button>
+    <button class="service" data-en="Death certificate మరణ ధృవపత్రం" data-te="మరణ ధృవపత్రం"><span class="emoji">📄</span><span class="service-name">Death Certificate</span></button>
+    <button class="service" data-en="Income certificate ఆదాయ ధృవపత్రం" data-te="ఆదాయ ధృవపత్రం"><span class="emoji">💰</span><span class="service-name">Income Certificate</span></button>
+    <button class="service" data-en="Caste certificate కుల ధృవపత్రం" data-te="కుల ధృవపత్రం"><span class="emoji">👥</span><span class="service-name">Caste Certificate</span></button>
+    <button class="service" data-en="OBC certificate" data-te="OBC ధృవపత్రం"><span class="emoji">📋</span><span class="service-name">OBC Certificate</span></button>
+    <button class="service" data-en="EWS certificate" data-te="EWS ధృవపత్రం"><span class="emoji">📑</span><span class="service-name">EWS Certificate</span></button>
+    <button class="service" data-en="Ration card రేషన్ కార్డు" data-te="రేషన్ కార్డు"><span class="emoji">🪪</span><span class="service-name">Ration Card</span></button>
+    <button class="service" data-en="Ration card member changes రేషన్ సభ్యుల మార్పులు" data-te="రేషన్ సభ్యుల మార్పులు"><span class="emoji">👨‍👩‍👧</span><span class="service-name">Ration Card Member Changes</span></button>
+    <button class="service" data-en="Pension services పెన్షన్ సేవలు" data-te="పెన్షన్ సేవలు"><span class="emoji">🧓</span><span class="service-name">Pension Services</span></button>
+    <button class="service" data-en="Aarogyasri ఆరోగ్యశ్రీ" data-te="ఆరోగ్యశ్రీ"><span class="emoji">✚</span><span class="service-name">Aarogyasri</span></button>
+    <button class="service" data-en="Family member certificate కుటుంబ సభ్యుల ధృవపత్రం" data-te="కుటుంబ సభ్యుల ధృవపత్రం"><span class="emoji">👪</span><span class="service-name">Family Member Certificate</span></button>
+    <button class="service" data-en="Marriage certificate వివాహ ధృవపత్రం" data-te="వివాహ ధృవపత్రం"><span class="emoji">💍</span><span class="service-name">Marriage Certificate</span></button>
+    <button class="service" data-en="Revenue services రెవెన్యూ సేవలు" data-te="రెవెన్యూ సేవలు"><span class="emoji">🏛️</span><span class="service-name">Revenue Services</span></button>
+    <button class="service" data-en="Other services ఇతర సేవలు" data-te="ఇతర సేవలు"><span class="emoji">⚙️</span><span class="service-name">Other Services</span></button>
+  </section>
+
+  <div class="note" id="note">
+    Please confirm required documents, eligibility and application procedures with the relevant government department or official portal. This page is an information guide and is not an official government website.
+  </div>
+  <div style="text-align:center"><button class="back" id="backBtn" type="button">← Back</button></div>
+  <footer><strong>Raviteja</strong> | సేవ మీ కోసం 💙</footer>
+</main>
+<script>
+  const search = document.getElementById('search');
+  const cards = [...document.querySelectorAll('.service')];
+  const langBtn = document.getElementById('langBtn');
+  let telugu = false;
+
+  search.addEventListener('input', () => {
+    const q = search.value.trim().toLocaleLowerCase();
+    cards.forEach(card => {
+      card.classList.toggle('hidden', !card.dataset.en.toLocaleLowerCase().includes(q) && !card.dataset.te.toLocaleLowerCase().includes(q));
+    });
+  });
+
+  langBtn.addEventListener('click', () => {
+    telugu = !telugu;
+    document.documentElement.lang = telugu ? 'te' : 'en';
+    document.getElementById('subtitle').textContent = telugu ? 'రవితేజ — ప్రభుత్వ సేవల మార్గదర్శి' : 'Raviteja — Government Services Guide';
+    document.getElementById('sectionTitle').textContent = telugu ? 'ప్రభుత్వ సేవలు' : 'Government Services';
+    search.placeholder = telugu ? 'సేవను వెతకండి…' : 'Search services…';
+    search.setAttribute('aria-label', search.placeholder);
+    cards.forEach(card => card.querySelector('.service-name').textContent = telugu ? card.dataset.te : card.dataset.en.split(' ')[0] + (card.dataset.en.includes(' ') ? card.dataset.en.slice(card.dataset.en.indexOf(' ')) : ''));
+    // Keep English labels clean when switching back.
+    const english = ['Birth Certificate','Death Certificate','Income Certificate','Caste Certificate','OBC Certificate','EWS Certificate','Ration Card','Ration Card Member Changes','Pension Services','Aarogyasri','Family Member Certificate','Marriage Certificate','Revenue Services','Other Services'];
+    cards.forEach((card,i) => { if (!telugu) card.querySelector('.service-name').textContent = english[i]; });
+    document.getElementById('note').textContent = telugu
+      ? 'అవసరమైన పత్రాలు, అర్హతలు మరియు దరఖాస్తు విధానాన్ని సంబంధిత ప్రభుత్వ శాఖ లేదా అధికారిక పోర్టల్‌లో నిర్ధారించుకోండి. ఇది సమాచార మార్గదర్శి మాత్రమే; అధికారిక ప్రభుత్వ వెబ్‌సైట్ కాదు.'
+      : 'Please confirm required documents, eligibility and application procedures with the relevant government department or official portal. This page is an information guide and is not an official government website.';
+    document.getElementById('backBtn').textContent = telugu ? '← వెనక్కి' : '← Back';
+  });
+
+  document.getElementById('backBtn').addEventListener('click', () => {
+    if (history.length > 1) history.back();
+    else { search.value = ''; search.dispatchEvent(new Event('input')); window.scrollTo({top:0,behavior:'smooth'}); }
+  });
+</script>
+</body>
+</html>
